@@ -7,9 +7,9 @@ int main(int argc, char const *argv[])
     //Variables
     double a = 0;
     double b = 0;
-    int suma;
-    int resta;
-    int mult;
+    double suma;
+    double resta;
+    double mult;
     double div;
     
     //Ingreso de datos
