@@ -7,11 +7,11 @@ int main(int argc, char const *argv[])
     int numeroEntero;
     numeroEntero = 15;
 
-    cout << numeroEntero;
+    cout << "Entero: " << numeroEntero << endl;
 
     numeroEntero = 18;
 
-    cout << numeroEntero;
+    cout <<"Entero modificado: "<< numeroEntero;
 
     return 0;
 }
