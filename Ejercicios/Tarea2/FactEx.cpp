@@ -29,27 +29,28 @@ int main(int argc, char const *argv[])
 
     if (exenta == 'S' || exenta == 's')
     {
-    calculoDesc = (subtotal * descuento) / 100; 
-    total = subtotal - calculoDesc;
+
+         calculoDesc = (subtotal * descuento) / 100; 
+         total = subtotal - calculoDesc;
 
     // Salida 1
 
-    cout << endl;
-    cout << "Total a pagar es: " << total;
+         cout << endl;
+         cout << "Total a pagar es: " << total;
     }
     
     // Proceso 2
 
     else if (exenta == 'N' || exenta == 'n')
     {   
-    calculoDesc = (subtotal * descuento) / 100; 
-    calculoImp = (subtotal - calculoDesc) * impuesto;
-    total = subtotal - calculoDesc + calculoImp;
+         calculoDesc = (subtotal * descuento) / 100; 
+         calculoImp = (subtotal - calculoDesc) * impuesto;
+         total = subtotal - calculoDesc + calculoImp;
     
     // Salida 2
 
-    cout << endl;
-    cout << "Total a pagar es: " << total;
+         cout << endl;
+         cout << "Total a pagar es: " << total;
     }
 
     //Error
@@ -57,7 +58,7 @@ int main(int argc, char const *argv[])
     else
 
     {
-    cout << "Error!!! Letra ingresada invalida.";
+         cout << "Error!!! Letra ingresada invalida.";
     }
     
     return 0;
