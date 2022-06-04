@@ -16,10 +16,12 @@ int main(int argc, char const *argv[])
 
     cout << "Ingrese el subtotal de la factura: ";
     cin >> subtotal;
-
+    cout << endl;
+    
     cout << "Ingrese el descuento (0, 10, 15, 20): ";
     cin >> descuento;
-
+    
+    cout << endl;
     cout << "Es factura exenta? Ingrese S/N: ";
     cin >> exenta;
 
