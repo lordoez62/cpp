@@ -16,6 +16,9 @@ int multiplicar (int a, int b){
 }
 
 int dividir (int a, int b){
+    if (a==0 || b==0){
+        throw "No se puede dividir entre 0";
+    }
     return a / b;
 }
 
