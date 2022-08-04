@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
     cin >> primerApellido;
     cout << endl;
 
-
+    system("cls");
     cout << "Su nombre completo es: " << nombreCompleto(primerNombre , primerApellido);
 
 
