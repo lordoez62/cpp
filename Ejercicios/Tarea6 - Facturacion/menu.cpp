@@ -2,17 +2,11 @@
 
 using namespace std;
 
-int agregarProducto(a , b){
-    return a + b;
-}
-
 int main(int argc, char const *argv[])
 {
-    int opcion = 0;
+    int opcion;
 
-    
-
-    while (true) {
+    while (opcion != 0) {
         cout << "*****" << endl;
         cout << "Menu" << endl;
         cout << "*****" << endl;
@@ -32,13 +26,35 @@ int main(int argc, char const *argv[])
         }        
 
         switch (opcion)
-            {
+        {
             case 1: 
-                {
+            while (true)
+                { 
                     system("cls");
+                    cout << "*****" << endl;
                     cout << "Ingreso al menu de bebidas frias" << endl;
-                    system("pause");      
-                    break;
+                    cout << "*****" << endl;
+
+                    cout << "1. Granita de frutas" << endl;
+                    cout << "2. Granita de cafe" << endl;
+                    cout << "3. Moccachino" << endl;
+                    cout << "4. Menu anterior" << endl;
+
+                    cout << "Ingrese una opcion: ";
+                    cin >> opcion;
+                          switch (opcion)
+                             {
+                                  case 1:{
+
+                                      
+                                  }
+                                  
+                             return;                  
+                             default:
+                             break;
+                            }
+                            system("pause");      
+                            break;
                 }
 
             case 2:
@@ -59,8 +75,7 @@ int main(int argc, char const *argv[])
                 cout << "Ingrese una opcion valida (0,1,2)" << endl;
                 system("pause");
                 break;
-            }
-
+        }
     }
 
     cout << endl;
