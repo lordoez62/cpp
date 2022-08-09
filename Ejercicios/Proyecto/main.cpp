@@ -261,6 +261,8 @@ int main(int argc, char const *argv[])
                     cin>> nombre2; 
                     cout<< "Ingrese el apellido del cliente: ";
                     cin>> apellido2;
+                    cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
+                    cin>> cantNoc2;
                     cout<< "Esta seguro de registrar al cliente " << nombre2 << " " << apellido2 << " en la habitacion " << hab2 << "? Presione Y o N" << endl;
                     cin>> resp;
                     system("cls");
@@ -269,7 +271,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre2 << " " << apellido2 << " en la habitacion " << hab2;
                         cout<< endl;
-                        cuenta2 = cuenta2 + pre2;
+                        cuenta2 = (pre2 * cantNoc2) + cuenta2;
                         stat2 = "Ocupada";
                         system("pause");
                         break;     
@@ -279,7 +281,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre2 << " " << apellido2 << " en la habitacion" << hab2;
                         cout<< endl;
-                        cuenta2 = cuenta2 + pre2;
+                        cuenta2 = (pre2 * cantNoc2) + cuenta2;
                         stat2 = "Ocupada";
                         system("pause");
                         break;     
@@ -340,6 +342,8 @@ int main(int argc, char const *argv[])
                     cin>> nombre3; 
                     cout<< "Ingrese el apellido del cliente: ";
                     cin>> apellido3;
+                    cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
+                    cin>> cantNoc3;
                     cout<< "Esta seguro de registrar al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3 << "? Presione Y o N" << endl;
                     cin>> resp;
                     system("cls");
@@ -348,7 +352,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3;
                         cout<< endl;
-                        cuenta3 = cuenta3 + pre3;
+                        cuenta3 = (pre3 * cantNoc3) + cuenta3;
                         stat3 = "Ocupada"; 
                         system("pause");
                         break;    
@@ -358,7 +362,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3;
                         cout<< endl;
-                        cuenta3 = cuenta3 + pre3;
+                        cuenta3 = (pre3 * cantNoc3) + cuenta3;
                         stat3 = "Ocupada"; 
                         system("pause");
                         break;    
@@ -419,6 +423,8 @@ int main(int argc, char const *argv[])
                     cin>> nombre4; 
                     cout<< "Ingrese el apellido del cliente: ";
                     cin>> apellido4;
+                    cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
+                    cin>> cantNoc4;
                     cout<< "Esta seguro de registrar al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4 << "? Presione Y o N" << endl;
                     cin>> resp;
                     system("cls");
@@ -427,7 +433,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4;
                         cout<< endl;
-                        cuenta4 = cuenta4 + pre4;
+                        cuenta4 = (pre4 * cantNoc4) + cuenta4;
                         stat4 = "Ocupada";
                         system("pause");
                         break;     
@@ -437,7 +443,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4;
                         cout<< endl;
-                        cuenta4 = cuenta4 + pre4;
+                        cuenta4 = (pre4 * cantNoc4) + cuenta4;
                         stat4 = "Ocupada";  
                         system("pause");
                         break;   
@@ -498,6 +504,8 @@ int main(int argc, char const *argv[])
                     cin>> nombre5; 
                     cout<< "Ingrese el apellido del cliente: ";
                     cin>> apellido5;
+                    cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
+                    cin>> cantNoc5;
                     cout<< "Esta seguro de registrar al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5 << "? Presione Y o N" << endl;
                     cin>> resp;
                     system("cls");
@@ -506,7 +514,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5;
                         cout<< endl;
-                        cuenta5 = cuenta5 + pre5;
+                        cuenta5 = (pre5 * cantNoc5) + cuenta5;
                         stat5 = "Ocupada"; 
                         system("pause");
                         break;    
@@ -516,7 +524,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "Se registro al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5;
                         cout<< endl;
-                        cuenta5 = cuenta5 + pre5;
+                        cuenta5 = (pre5 * cantNoc5) + cuenta5;
                         stat5 = "Ocupada";  
                         system("pause");
                         break;   
@@ -1265,7 +1273,7 @@ int main(int argc, char const *argv[])
             break;
         }   
 
-        case 5: // Check out // en proceso
+        case 5: // Check out
         {
             system("cls"); 
             
@@ -1315,7 +1323,7 @@ int main(int argc, char const *argv[])
                     }
                     else if (resp == 'n')
                     {
-                        cout<< "Se ha cancelado la salida del cliente" << cuenta1 << endl;
+                        cout<< "Se ha cancelado la salida del cliente" << endl;
                         system("pause");
                         break;
                     }
@@ -1328,317 +1336,148 @@ int main(int argc, char const *argv[])
 
             case 2: // Habitacion 2
             {
-                if (stat2 == "Ocupada" && lim2 == "Sucia")
+                if (stat2 == "Disponible")
                 {
-                    cout << "Error, la habitacion esta ocupada y aun falta la limpieza" << endl;
+                    cout << "Error, la habitacion esta no esta ocupada" << endl;
                     system("pause");
                     break;
                 }
                 
-                else if (stat2 == "Disponible" && lim2 == "Sucia")
+                else if (stat2 == "Ocupada")
                 {
-                    cout << "Error, a la habitacion aun le falta la limpieza" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat2 == "Ocupada" && lim2 == "Limpia")
-                {
-                    cout << "Error, la habitacion esta ocupada" << endl;
-                    system("pause");
-                    break;
-                    
-                }
-                
-                else if (stat2 == "Disponible" && lim2 == "Limpia")
-                {
-                    cout<< "Ingrese el nombre del cliente: ";
-                    cin>> nombre2; 
-                    cout<< "Ingrese el apellido del cliente: ";
-                    cin>> apellido2;
-                    cout<< "Esta seguro de registrar al cliente " << nombre2 << " " << apellido2 << " en la habitacion " << hab2 << "? Presione Y o N" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A002?" << endl;
                     cin>> resp;
-                    system("cls");
-
-                    if(resp == 'Y')
+                    if (resp == 'y')
                     {
-                        cout<< "Se registro al cliente " << nombre2 << " " << apellido2 << " en la habitacion " << hab2;
-                        cout<< endl;
-                        cuenta2 = cuenta2 + pre2;
-                        stat2 = "Ocupada";
+                        cout<< "El total a pagar del cliente es de L" << cuenta2 << endl;
+                        stat2 = "Disponible";
                         system("pause");
-                        break;     
-                    }
-
-                    if(resp == 'y')
-                    {
-                        cout<< "Se registro al cliente " << nombre2 << " " << apellido2 << " en la habitacion" << hab2;
-                        cout<< endl;
-                        cuenta2 = cuenta2 + pre2;
-                        stat2 = "Ocupada";
+                        system("cls");
+                        cout<< "La habitacion se libero de manera correcta" << endl;
+                        cuenta2 = 0;
                         system("pause");
-                        break;     
+                        break;
                     }
-
-                    else if (resp == 'N')
-                    {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
-                        system("pause");
-                        break; 
-                    }
-        
                     else if (resp == 'n')
                     {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
+                        cout<< "Se ha cancelado la salida del cliente" << endl;
                         system("pause");
-                        break; 
+                        break;
                     }
 
-                    else
-                    {
-                        cout<< "La tecla presionada es invalida" << endl;;
-                        system("pause");
-                        break; 
-                    }
+                    system("pause");
+                    break;
                 }
                  
             }
 
             case 3: // Habitacion 3
             {
-                if (stat3 == "Ocupada" && lim3== "Sucia")
+               if (stat3 == "Disponible")
                 {
-                    cout << "Error, la habitacion esta ocupada y aun falta la limpieza" << endl;
+                    cout << "Error, la habitacion esta no esta ocupada" << endl;
                     system("pause");
                     break;
                 }
                 
-                else if (stat3 == "Disponible" && lim3 == "Sucia")
+                else if (stat3 == "Ocupada")
                 {
-                    cout << "Error, a la habitacion aun le falta la limpieza" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat3 == "Ocupada" && lim3 == "Limpia")
-                {
-                    cout << "Error, la habitacion esta ocupada" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat3 == "Disponible" && lim3 == "Limpia")
-                {
-                    cout<< "Ingrese el nombre del cliente: ";
-                    cin>> nombre3; 
-                    cout<< "Ingrese el apellido del cliente: ";
-                    cin>> apellido3;
-                    cout<< "Esta seguro de registrar al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3 << "? Presione Y o N" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A003?" << endl;
                     cin>> resp;
-                    system("cls");
-
-                    if(resp == 'Y')
+                    if (resp == 'y')
                     {
-                        cout<< "Se registro al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3;
-                        cout<< endl;
-                        cuenta3 = cuenta3 + pre3;
-                        stat3 = "Ocupada"; 
+                        cout<< "El total a pagar del cliente es de L" << cuenta3 << endl;
+                        stat3 = "Disponible";
                         system("pause");
-                        break;    
-                    }
-
-                    if(resp == 'y')
-                    {
-                        cout<< "Se registro al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3;
-                        cout<< endl;
-                        cuenta3 = cuenta3 + pre3;
-                        stat3 = "Ocupada"; 
+                        system("cls");
+                        cout<< "La habitacion se libero de manera correcta" << endl;
+                        cuenta3 = 0;
                         system("pause");
-                        break;    
+                        break;
                     }
-
-                    else if (resp == 'N')
-                    {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
-                        system("pause");
-                        break; 
-                    }
-        
                     else if (resp == 'n')
                     {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
+                        cout<< "Se ha cancelado la salida del cliente" << endl;
                         system("pause");
-                        break; 
+                        break;
                     }
 
-                    else
-                    {
-                        cout<< "La tecla presionada es invalida" << endl;;
-                        system("pause");
-                        break; 
-                    }
+                    system("pause");
+                    break;
                 }
                  
             }
             
             case 4: // Habitacion 4
             {
-                if (stat4 == "Ocupada" && lim4 == "Sucia")
+                if (stat4 == "Disponible")
                 {
-                    cout << "Error, la habitacion esta ocupada y aun falta la limpieza" << endl;
+                    cout << "Error, la habitacion esta no esta ocupada" << endl;
                     system("pause");
                     break;
                 }
                 
-                else if (stat4 == "Disponible" && lim4 == "Sucia")
+                else if (stat4 == "Ocupada")
                 {
-                    cout << "Error, a la habitacion aun le falta la limpieza" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat4 == "Ocupada" && lim4 == "Limpia")
-                {
-                    cout << "Error, la habitacion esta ocupada" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat4 == "Disponible" && lim4 == "Limpia")
-                {
-                    cout<< "Ingrese el nombre del cliente: ";
-                    cin>> nombre4; 
-                    cout<< "Ingrese el apellido del cliente: ";
-                    cin>> apellido4;
-                    cout<< "Esta seguro de registrar al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4 << "? Presione Y o N" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A004?" << endl;
                     cin>> resp;
-                    system("cls");
-
-                    if(resp == 'Y')
+                    if (resp == 'y')
                     {
-                        cout<< "Se registro al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4;
-                        cout<< endl;
-                        cuenta4 = cuenta4 + pre4;
-                        stat4 = "Ocupada";
+                        cout<< "El total a pagar del cliente es de L" << cuenta4 << endl;
+                        stat4 = "Disponible";
                         system("pause");
-                        break;     
-                    }
-
-                    if(resp == 'y')
-                    {
-                        cout<< "Se registro al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4;
-                        cout<< endl;
-                        cuenta4 = cuenta4 + pre4;
-                        stat4 = "Ocupada";  
+                        system("cls");
+                        cout<< "La habitacion se libero de manera correcta" << endl;
+                        cuenta4 = 0;
                         system("pause");
-                        break;   
+                        break;
                     }
-
-                    else if (resp == 'N')
-                    {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
-                        system("pause");
-                        break; 
-                    }
-        
                     else if (resp == 'n')
                     {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
+                        cout<< "Se ha cancelado la salida del cliente" << endl;
                         system("pause");
-                        break; 
+                        break;
                     }
 
-                    else
-                    {
-                        cout<< "La tecla presionada es invalida" << endl;;
-                        system("pause");
-                        break; 
-                    }
+                    system("pause");
+                    break;
                 }
                  
             }
 
             case 5: // Habitacion 5
             {
-                if (stat5 == "Ocupada" && lim5 == "Sucia")
+                if (stat5 == "Disponible")
                 {
-                    cout << "Error, la habitacion esta ocupada y aun falta la limpieza" << endl;
+                    cout << "Error, la habitacion esta no esta ocupada" << endl;
                     system("pause");
                     break;
                 }
                 
-                else if (stat5 == "Disponible" && lim5 == "Sucia")
+                else if (stat5 == "Ocupada")
                 {
-                    cout << "Error, a la habitacion aun le falta la limpieza" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat5 == "Ocupada" && lim5 == "Limpia")
-                {
-                    cout << "Error, la habitacion esta ocupada" << endl;
-                    system("pause");
-                    break;
-                }
-                
-                else if (stat5 == "Disponible" && lim5 == "Limpia")
-                {
-                    cout<< "Ingrese el nombre del cliente: ";
-                    cin>> nombre5; 
-                    cout<< "Ingrese el apellido del cliente: ";
-                    cin>> apellido5;
-                    cout<< "Esta seguro de registrar al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5 << "? Presione Y o N" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A005?" << endl;
                     cin>> resp;
-                    system("cls");
-
-                    if(resp == 'Y')
+                    if (resp == 'y')
                     {
-                        cout<< "Se registro al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5;
-                        cout<< endl;
-                        cuenta5 = cuenta5 + pre5;
-                        stat5 = "Ocupada"; 
+                        cout<< "El total a pagar del cliente es de L" << cuenta5 << endl;
+                        stat5 = "Disponible";
                         system("pause");
-                        break;    
-                    }
-
-                    if(resp == 'y')
-                    {
-                        cout<< "Se registro al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5;
-                        cout<< endl;
-                        cuenta5 = cuenta5 + pre5;
-                        stat5 = "Ocupada";  
+                        system("cls");
+                        cout<< "La habitacion se libero de manera correcta" << endl;
+                        cuenta5 = 0;
                         system("pause");
-                        break;   
+                        break;
                     }
-
-                    else if (resp == 'N')
-                    {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
-                        system("pause");
-                        break; 
-                    }
-        
                     else if (resp == 'n')
                     {
-                        cout<< "Se ha cancelado el registro" << endl;
-                        cout<< endl;
+                        cout<< "Se ha cancelado la salida del cliente" << endl;
                         system("pause");
-                        break; 
+                        break;
                     }
 
-                    else
-                    {
-                        cout<< "La tecla presionada es invalida" << endl;;
-                        system("pause");
-                        break; 
-                    }
+                    system("pause");
+                    break;
                 }
                  
             }
