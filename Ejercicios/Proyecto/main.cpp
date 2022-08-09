@@ -121,10 +121,8 @@ int main(int argc, char const *argv[])
         while (seleccion != 9)
         {
 
-        case 1:
-
-        // Registro en habitaciones
-          {
+        case 1: // Registro en habitaciones
+        {
             system("cls"); 
             
             cout<< "Estas son las habitaciones dispinibles, porfavor selecciona una:" << endl;
@@ -624,103 +622,95 @@ int main(int argc, char const *argv[])
 
                     if (opcion == 1)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta1 = cuenta1 + beb1;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta1 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 2)
                     {
+                        if (stat2 == "Ocupada")
+                        {
                         cuenta2 = cuenta2 + beb1;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta2 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 3)
                     {
+                        if (stat3 == "Ocupada")
+                        {
                         cuenta3 = cuenta3 + beb1;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta3 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 4)
                     {
+                        if(stat4 == "Ocupada")
+                        {
                         cuenta4 = cuenta4 + beb1;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta4 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 5)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta5 = cuenta5 + beb1;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta5 << endl;
                         cout << endl;
                         system("pause");
                         break;
-                    }
-
-                   
-                    cout << "A que habitacion desea cargar la Coca - cola 1/2? " <<endl;
-                    cout << hab1 << endl;
-                    cout << hab2 << endl;
-                    cout << hab3 << endl;
-                    cout << hab4 << endl;
-                    cout << hab5 << endl;
-                    cin>> opcion;
-
-                    if (opcion == 1)
-                    {
-                        cuenta1 = cuenta1 + beb4;
-                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
-                        cout << "L" << cuenta1 << endl;
-                        cout << endl;
-                        system("pause");
-                        break;
-                    }
-                    else if (opcion == 2)
-                    {
-                        cuenta2 = cuenta2 + beb4;
-                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
-                        cout << "L" << cuenta2 << endl;
-                        cout << endl;
-                        system("pause");
-                        break;
-                    }
-                    else if (opcion == 3)
-                    {
-                        cuenta3 = cuenta3 + beb4;
-                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
-                        cout << "L" << cuenta3 << endl;
-                        cout << endl;
-                        system("pause");
-                        break;
-                    }
-                    else if (opcion == 4)
-                    {
-                        cuenta4 = cuenta4 + beb4;
-                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
-                        cout << "L" << cuenta4 << endl;
-                        cout << endl;
-                        system("pause");
-                        break;
-                    }
-                    else if (opcion == 5)
-                    {
-                        cuenta5 = cuenta5 + beb4;
-                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
-                        cout << "L" << cuenta5 << endl;
-                        cout << endl;
-                        system("pause");
-                        break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     }
                 case 2: // Limonada
@@ -735,48 +725,96 @@ int main(int argc, char const *argv[])
 
                     if (opcion == 1)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta1 = cuenta1 + beb2;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta1 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 2)
                     {
+                        if(stat2 == "Ocupada")
+                        {
                         cuenta2 = cuenta2 + beb2;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta2 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 3)
                     {
+                        if(stat3 == "Ocupada")
+                        {
                         cuenta3 = cuenta3 + beb2;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta3 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 4)
                     {
+                        if(stat4 == "Ocupada")
+                        {
                         cuenta4 = cuenta4 + beb2;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta4 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 5)
                     {
+                        if(stat5 == "Ocupada")
+                        {
                         cuenta5 = cuenta5 + beb2;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta5 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                 }
                 case 3 : // Pepsi
@@ -791,48 +829,95 @@ int main(int argc, char const *argv[])
 
                     if (opcion == 1)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta1 = cuenta1 + beb3;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta1 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 2)
                     {
+                        if (stat2 == "Ocupada")
+                        {
                         cuenta2 = cuenta2 + beb3;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta2 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 3)
                     {
+                        if(stat3 == "Ocupada")
+                        {
                         cuenta3 = cuenta3 + beb3;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta3 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 4)
                     {
+                        if(stat4 == "Ocupada")
+                        {
                         cuenta4 = cuenta4 + beb3;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta4 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 5)
                     {
+                        if(stat5 == "Ocupada")
+                        {
                         cuenta5 = cuenta5 + beb3;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta5 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     }              
                 case 4 : // Coca - cola
@@ -847,48 +932,94 @@ int main(int argc, char const *argv[])
 
                     if (opcion == 1)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta1 = cuenta1 + beb4;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta1 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 2)
                     {
+                        if(stat2 == "Ocupada")
+                        {
                         cuenta2 = cuenta2 + beb4;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta2 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 3)
                     {
+                        if(stat3 == "Ocupada")
+                        {
                         cuenta3 = cuenta3 + beb4;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta3 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 4)
                     {
+                        if(stat4 == "Ocupada")
+                        {
                         cuenta4 = cuenta4 + beb4;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta4 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 5)
                     {
+                        if(stat5 == "Ocupada")
+                        {
                         cuenta5 = cuenta5 + beb4;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta5 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     }              
                 case 5 : // Cerveza
@@ -903,50 +1034,96 @@ int main(int argc, char const *argv[])
 
                     if (opcion == 1)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta1 = cuenta1 + beb5;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta1 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 2)
                     {
+                        if(stat2 == "Ocupada")
+                        {
                         cuenta2 = cuenta2 + beb5;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta2 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 3)
                     {
+                        if(stat3 == "Ocupada")
+                        {
                         cuenta3 = cuenta3 + beb5;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta3 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 4)
                     {
+                        if(stat4 == "Ocupada")
+                        {
                         cuenta4 = cuenta4 + beb5;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta4 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 5)
                     {
+                        if(stat5 == "Ocupada")
+                        {
                         cuenta5 = cuenta5 + beb5;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta5 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
-                    }
+                    
+                }
                 case 6 : // Vodka
                 {
                     cout << "A que habitacion desea cargar el vodka? " <<endl;
@@ -959,48 +1136,95 @@ int main(int argc, char const *argv[])
 
                     if (opcion == 1)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta1 = cuenta1 + beb6;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta1 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 2)
                     {
+                         if(stat2 == "Ocupada")
+                        {
                         cuenta2 = cuenta2 + beb6;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta2 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     else if (opcion == 3)
                     {
+                        if(stat3 == "Ocupada")
+                        {
                         cuenta3 = cuenta3 + beb6;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta3 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 4)
                     {
+                        if(stat4 == "Ocupada")
+                        {
                         cuenta4 = cuenta4 + beb6;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta4 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                         else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
+
                     }
                     else if (opcion == 5)
                     {
+                        if(stat1 == "Ocupada")
+                        {
                         cuenta5 = cuenta5 + beb6;
                         cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
                         cout << "L" << cuenta5 << endl;
                         cout << endl;
                         system("pause");
                         break;
+                        }
+                        else
+                        {
+                            cout << "Error! No se puede realizar el cargo ya que la habitacion no esta habitada." << endl;
+                            system("pause");
+                            break;
+                        }
                     }
                     }
 
