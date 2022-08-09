@@ -1280,11 +1280,11 @@ int main(int argc, char const *argv[])
             cout<< "Estas son las habitaciones, porfavor selecciona una para hacer check out:" << endl;
             cout<< endl;
             cout<< endl;
-            cout<< hab1 << tipo1 << stat1 << endl;
-            cout<< hab2 << tipo2 << stat2 << endl;
-            cout<< hab3 << tipo3 << stat3 << endl;
-            cout<< hab4 << tipo4 << stat4 << endl;
-            cout<< hab5 << tipo5 << stat5 << endl;
+            cout<< hab1 << " " << tipo1 << " " << stat1 << endl;
+            cout<< hab2 << " " << tipo2 << " " << stat2 << endl;
+            cout<< hab3 << " " << tipo3 << " " << stat3 << endl;
+            cout<< hab4 << " " << tipo4 << " " << stat4 << endl;
+            cout<< hab5 << " " << tipo5 << " " << stat5 << endl;
             cout<< endl;
             cout<< "O presiona 9 para volver al menu anterior" << endl;
             cin>> seleccion;
@@ -1314,6 +1314,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "El total a pagar del cliente es de L" << cuenta1 << endl;
                         stat1 = "Disponible";
+                        lim1 = "Sucia";
                         system("pause");
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
@@ -1351,6 +1352,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "El total a pagar del cliente es de L" << cuenta2 << endl;
                         stat2 = "Disponible";
+                        lim2 = "Sucia";
                         system("pause");
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
@@ -1388,6 +1390,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "El total a pagar del cliente es de L" << cuenta3 << endl;
                         stat3 = "Disponible";
+                        lim3 = "Sucia";
                         system("pause");
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
@@ -1425,6 +1428,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "El total a pagar del cliente es de L" << cuenta4 << endl;
                         stat4 = "Disponible";
+                        lim4 = "Sucia";
                         system("pause");
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
@@ -1462,6 +1466,7 @@ int main(int argc, char const *argv[])
                     {
                         cout<< "El total a pagar del cliente es de L" << cuenta5 << endl;
                         stat5 = "Disponible";
+                        lim5 = "Sucia";
                         system("pause");
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
@@ -1491,6 +1496,203 @@ int main(int argc, char const *argv[])
 
         }
 
+        case 6: // Aseo de habitaciones
+        {
+            system("cls"); 
+            
+            cout<< "Estas son las habitaciones, porfavor selecciona la que ya fue asaeada:" << endl;
+            cout<< endl;
+            cout<< endl;
+            cout<< hab1 << " " << lim1 << " " << stat1 << endl;
+            cout<< hab2 << " " << lim2 << " " << stat2 << endl;
+            cout<< hab3 << " " << lim3 << " " << stat3 << endl;
+            cout<< hab4 << " " << lim4 << " " << stat4 << endl;
+            cout<< hab5 << " " << lim5 << " " << stat5 << endl;
+            cout<< endl;
+            cout<< "O presiona 9 para volver al menu anterior" << endl;
+            cin>> seleccion;
+            cout<< endl;
+
+            if (seleccion == 9)
+            {
+                break;
+            }
+
+            switch (seleccion)
+            {
+            case 1: // Habitacion 1
+            {
+                if (lim1 == "Limpia")
+                {
+                    cout << "Error, la habitacion esta limpia" << endl;
+                    system("pause");
+                    break;
+                }
+                
+                else if (lim1 == "Sucia")
+                {
+                    cout << "Esta seguro que desea marcar la habitacion A001 como limpia?" << endl;
+                    cin>> resp;
+                    if (resp == 'y')
+                    {
+                        cout<< "Se marco la habitacion como limpia" << endl;
+                        lim1 = "Limpia";
+                        system("pause");
+                        break;
+                    }
+                    else if (resp == 'n')
+                    {
+                        cout<< "Se ha cancelado la limpieza" << endl;
+                        system("pause");
+                        break;
+                    }
+
+                    system("pause");
+                    break;
+                }
+                 
+            }
+
+            case 2: // Habitacion 2
+            {
+                if (lim1 == "Limpia")
+                {
+                    cout << "Error, la habitacion esta limpia" << endl;
+                    system("pause");
+                    break;
+                }
+                
+                else if (lim2 == "Sucia")
+                {
+                    cout << "Esta seguro que desea marcar la habitacion A002 como limpia?" << endl;
+                    cin>> resp;
+                    if (resp == 'y')
+                    {
+                        cout<< "Se marco la habitacion como limpia" << endl;
+                        lim2 = "Limpia";
+                        system("pause");
+                        break;
+                    }
+                    else if (resp == 'n')
+                    {
+                        cout<< "Se ha cancelado la limpieza" << endl;
+                        system("pause");
+                        break;
+                    }
+
+                    system("pause");
+                    break;
+                }
+                 
+            }
+
+            case 3: // Habitacion 3
+            {
+               if (lim3 == "Limpia")
+                {
+                    cout << "Error, la habitacion esta limpia" << endl;
+                    system("pause");
+                    break;
+                }
+                
+                else if (lim3 == "Sucia")
+                {
+                    cout << "Esta seguro que desea marcar la habitacion A003 como limpia?" << endl;
+                    cin>> resp;
+                    if (resp == 'y')
+                    {
+                        cout<< "Se marco la habitacion como limpia" << endl;
+                        lim3 = "Limpia";
+                        system("pause");
+                        break;
+                    }
+                    else if (resp == 'n')
+                    {
+                        cout<< "Se ha cancelado la limpieza" << endl;
+                        system("pause");
+                        break;
+                    }
+
+                    system("pause");
+                    break;
+                }
+                 
+            }
+
+            case 4:
+            {
+                if (lim4 == "Limpia")
+                {
+                    cout << "Error, la habitacion esta limpia" << endl;
+                    system("pause");
+                    break;
+                }
+                
+                else if (lim4 == "Sucia")
+                {
+                    cout << "Esta seguro que desea marcar la habitacion A004 como limpia?" << endl;
+                    cin>> resp;
+                    if (resp == 'y')
+                    {
+                        cout<< "Se marco la habitacion como limpia" << endl;
+                        lim4 = "Limpia";
+                        system("pause");
+                        break;
+                    }
+                    else if (resp == 'n')
+                    {
+                        cout<< "Se ha cancelado la limpieza" << endl;
+                        system("pause");
+                        break;
+                    }
+
+                    system("pause");
+                    break;
+                }
+            }
+
+            case 5: // Habitacion 5
+            {
+                if (lim5 == "Limpia")
+                {
+                    cout << "Error, la habitacion esta limpia" << endl;
+                    system("pause");
+                    break;
+                }
+                
+                else if (lim5 == "Sucia")
+                {
+                    cout << "Esta seguro que desea marcar la habitacion A005 como limpia?" << endl;
+                    cin>> resp;
+                    if (resp == 'y')
+                    {
+                        cout<< "Se marco la habitacion como limpia" << endl;
+                        lim5 = "Limpia";
+                        system("pause");
+                        break;
+                    }
+                    else if (resp == 'n')
+                    {
+                        cout<< "Se ha cancelado la limpieza" << endl;
+                        system("pause");
+                        break;
+                    }
+
+                    system("pause");
+                    break;
+                }
+                 
+            }
+
+            if (seleccion == 0)
+            {
+                break;
+            }
+            }
+
+
+        
+        }
         }
 
      if (opcion == 0)
