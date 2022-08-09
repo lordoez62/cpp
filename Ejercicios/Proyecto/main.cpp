@@ -44,10 +44,10 @@ int main(int argc, char const *argv[])
     string hab4 = "4. A004";
     string hab5 = "5. A005";
     string tipo1 = " ------ Habitacion sencilla ---- ";
-    string tipo2 = " ------ Habitacion doble ---- ";
-    string tipo3 = " ------ Suite sencilla ---- ";
-    string tipo4 = " ------ Suite doble ---- ";
-    string tipo5 = " ------ Suite presidencial ---- ";
+    string tipo2 = " ------ Habitacion doble ------- ";
+    string tipo3 = " ------ Suite sencilla --------- ";
+    string tipo4 = " ------ Suite doble ------------ ";
+    string tipo5 = " ------ Suite presidencial ----- ";
     string stat1 = "Disponible";
     string stat2 = "Disponible";
     string stat3 = "Disponible";
@@ -543,11 +543,6 @@ int main(int argc, char const *argv[])
                  
             }
 
-            default:
-                break;
-            }
-            
-
             if (seleccion == 0)
             {
                 break;
@@ -580,8 +575,8 @@ int main(int argc, char const *argv[])
 
         case 3: // Restaurante
         {
-            seleccion = 0;
-            while (seleccion != 9)
+            opcion = 0;
+            while (opcion != 9)
             {
             cout << "************" << endl;
             cout << "----Menu----" << endl;
@@ -609,6 +604,7 @@ int main(int argc, char const *argv[])
                 cout << "4. Coca - cola 1/2" <<"--------" << "L" << beb4 <<endl;
                 cout << "5. Cerveza" <<"----------------" << "L" << beb5 <<endl;
                 cout << "6. Vodka" <<"------------------" << "L" << beb6 <<endl;
+                cout << "9. Salir" <<endl;
                 cout << endl;
 
                 cout << "Seleccione la bebida que desea agregar: " << endl;
@@ -616,8 +612,7 @@ int main(int argc, char const *argv[])
 
                 switch (opcion)
                 {
-                case  1:
-
+                case 1: // Botella con agua
                 {
                     cout << "A que habitacion desea cargar la botella con agua? " << endl;
                     cout << hab1 << endl;
@@ -673,8 +668,63 @@ int main(int argc, char const *argv[])
                         break;
                     }
 
-                    case 2:
+                   
+                    cout << "A que habitacion desea cargar la Coca - cola 1/2? " <<endl;
+                    cout << hab1 << endl;
+                    cout << hab2 << endl;
+                    cout << hab3 << endl;
+                    cout << hab4 << endl;
+                    cout << hab5 << endl;
+                    cin>> opcion;
+
+                    if (opcion == 1)
                     {
+                        cuenta1 = cuenta1 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta1 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 2)
+                    {
+                        cuenta2 = cuenta2 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta2 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 3)
+                    {
+                        cuenta3 = cuenta3 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta3 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 4)
+                    {
+                        cuenta4 = cuenta4 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta4 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 5)
+                    {
+                        cuenta5 = cuenta5 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta5 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    }
+                case 2: // Limonada
+                {
                     cout << "A que habitacion desea cargar la limonada? " <<endl;
                     cout << hab1 << endl;
                     cout << hab2 << endl;
@@ -728,12 +778,10 @@ int main(int argc, char const *argv[])
                         system("pause");
                         break;
                     }
-                    }
-                    break;
-
-                    case 3 :
-                    {
-                    cout << "A que habitacion desea cargar la limonada? " <<endl;
+                }
+                case 3 : // Pepsi
+                {
+                    cout << "A que habitacion desea cargar la Pepsi 1/2? " <<endl;
                     cout << hab1 << endl;
                     cout << hab2 << endl;
                     cout << hab3 << endl;
@@ -786,32 +834,193 @@ int main(int argc, char const *argv[])
                         system("pause");
                         break;
                     }
+                    }              
+                case 4 : // Coca - cola
+                {
+                    cout << "A que habitacion desea cargar la Coca - cola 1/2? " <<endl;
+                    cout << hab1 << endl;
+                    cout << hab2 << endl;
+                    cout << hab3 << endl;
+                    cout << hab4 << endl;
+                    cout << hab5 << endl;
+                    cin>> opcion;
+
+                    if (opcion == 1)
+                    {
+                        cuenta1 = cuenta1 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta1 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
                     }
-                    break;
-
+                    else if (opcion == 2)
+                    {
+                        cuenta2 = cuenta2 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta2 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
                     }
-                
+                    else if (opcion == 3)
+                    {
+                        cuenta3 = cuenta3 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta3 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 4)
+                    {
+                        cuenta4 = cuenta4 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta4 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 5)
+                    {
+                        cuenta5 = cuenta5 + beb4;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta5 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    }              
+                case 5 : // Cerveza
+                {
+                    cout << "A que habitacion desea cargar la Cerveza? " <<endl;
+                    cout << hab1 << endl;
+                    cout << hab2 << endl;
+                    cout << hab3 << endl;
+                    cout << hab4 << endl;
+                    cout << hab5 << endl;
+                    cin>> opcion;
 
-                
-                }
-                
-             }
+                    if (opcion == 1)
+                    {
+                        cuenta1 = cuenta1 + beb5;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta1 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 2)
+                    {
+                        cuenta2 = cuenta2 + beb5;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta2 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 3)
+                    {
+                        cuenta3 = cuenta3 + beb5;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta3 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 4)
+                    {
+                        cuenta4 = cuenta4 + beb5;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta4 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 5)
+                    {
+                        cuenta5 = cuenta5 + beb5;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta5 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    }
+                case 6 : // Vodka
+                {
+                    cout << "A que habitacion desea cargar el vodka? " <<endl;
+                    cout << hab1 << endl;
+                    cout << hab2 << endl;
+                    cout << hab3 << endl;
+                    cout << hab4 << endl;
+                    cout << hab5 << endl;
+                    cin>> opcion;
+
+                    if (opcion == 1)
+                    {
+                        cuenta1 = cuenta1 + beb6;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta1 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 2)
+                    {
+                        cuenta2 = cuenta2 + beb6;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta2 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 3)
+                    {
+                        cuenta3 = cuenta3 + beb6;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta3 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 4)
+                    {
+                        cuenta4 = cuenta4 + beb6;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta4 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    else if (opcion == 5)
+                    {
+                        cuenta5 = cuenta5 + beb6;
+                        cout << "Se ha realizado el cargo a la cuenta de manera correcta" << endl;
+                        cout << "L" << cuenta5 << endl;
+                        cout << endl;
+                        system("pause");
+                        break;
+                    }
+                    }
+
+                if (opcion == 9)
+                {
                     break;
-                
-                default:
-                    break;
                 }
-
-
-                break;
             }
-                break;
-            
-            default:
-                break;
+                
             }
+                
+        }
 
-            case 4: // Cuentas por pagar
+
+               
+            }
+              
+        }
+
+        case 4: // Cuentas por pagar
         {
             cout << "Las cuentas montos a pagar de las habitaciones son de: " << endl;
             cout << endl;
@@ -824,15 +1033,15 @@ int main(int argc, char const *argv[])
             system("pause");
             break;
         }   
-        
+
         }
 
      if (opcion == 0)
         {
             break;
         }
-        
     }
+}
     
     system("cls");
     cout<< endl;
