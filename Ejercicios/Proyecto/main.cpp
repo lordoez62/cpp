@@ -88,7 +88,7 @@ int main(int argc, char const *argv[])
         else
         {
             system("cls");
-            cout<< "Usuario o contrasena incorrecta. Intento "<< contador <<"/3" << endl;
+            cout<< "Usuario o contrasena incorrecta. Intento " << contador <<"/3" << endl;
             
             if (contador == 3)
             {
@@ -619,7 +619,7 @@ int main(int argc, char const *argv[])
                 case  1:
 
                 {
-                    cout << "A que habitacion desea cargar la botella con agua? " <<endl;
+                    cout << "A que habitacion desea cargar la botella con agua? " << endl;
                     cout << hab1 << endl;
                     cout << hab2 << endl;
                     cout << hab3 << endl;
@@ -810,9 +810,8 @@ int main(int argc, char const *argv[])
             default:
                 break;
             }
-        }
-    
-        case 4: // Cuentas por pagar
+
+            case 4: // Cuentas por pagar
         {
             cout << "Las cuentas montos a pagar de las habitaciones son de: " << endl;
             cout << endl;
@@ -825,12 +824,16 @@ int main(int argc, char const *argv[])
             system("pause");
             break;
         }   
-    }
+        
+        }
+
      if (opcion == 0)
         {
             break;
         }
-}
+        
+    }
+    
     system("cls");
     cout<< endl;
     cout<< "Saliste del sistema" << endl;
