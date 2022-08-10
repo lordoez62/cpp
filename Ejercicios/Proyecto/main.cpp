@@ -108,6 +108,8 @@ int main(int argc, char const *argv[])
 
     while (opcion != 7)
     {
+    seleccion = 0;
+    system("cls");
     cout<< "Bienvenido al sistema de reservas del hotel" << endl;
     cout<< "-------------------------------------------" << endl;
     cout<< "Seleccione una opcion: " << endl;
@@ -125,11 +127,11 @@ int main(int argc, char const *argv[])
     {
         while (seleccion != 9)
         {
-
         case 1: // Registro en habitaciones
         {
+            while (seleccion != 9)
+            {
             system("cls"); 
-            
             cout<< "Estas son las habitaciones dispinibles, porfavor selecciona una para hacer check in:" << endl;
             cout<< endl;
             cout<< endl;
@@ -142,11 +144,6 @@ int main(int argc, char const *argv[])
             cout<< "O presiona 9 para volver al menu anterior" << endl;
             cin>> seleccion;
             cout<< endl;
-
-            if (seleccion == 9)
-            {
-                break;
-            }
 
             switch (seleccion)
             {
@@ -181,7 +178,7 @@ int main(int argc, char const *argv[])
                     cin>> apellido1;
                     cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
                     cin>> cantNoc1;
-                    cout<< "Esta seguro de registrar al cliente " << nombre1 << " " << apellido1 << " en la habitacion " << hab1 << "? Presione Y o N" << endl;
+                    cout<< "Esta seguro de registrar al cliente " << nombre1 << " " << apellido1 << " en la habitacion " << hab1 << "? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     system("cls");
 
@@ -228,7 +225,8 @@ int main(int argc, char const *argv[])
                         break;
                     }
                 }
-                 
+
+                seleccion = 0;    
             }
 
             case 2: // Habitacion 2
@@ -263,7 +261,7 @@ int main(int argc, char const *argv[])
                     cin>> apellido2;
                     cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
                     cin>> cantNoc2;
-                    cout<< "Esta seguro de registrar al cliente " << nombre2 << " " << apellido2 << " en la habitacion " << hab2 << "? Presione Y o N" << endl;
+                    cout<< "Esta seguro de registrar al cliente " << nombre2 << " " << apellido2 << " en la habitacion " << hab2 << "? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     system("cls");
 
@@ -344,7 +342,7 @@ int main(int argc, char const *argv[])
                     cin>> apellido3;
                     cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
                     cin>> cantNoc3;
-                    cout<< "Esta seguro de registrar al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3 << "? Presione Y o N" << endl;
+                    cout<< "Esta seguro de registrar al cliente " << nombre3 << " " << apellido3 << " en la habitacion " << hab3 << "? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     system("cls");
 
@@ -425,7 +423,7 @@ int main(int argc, char const *argv[])
                     cin>> apellido4;
                     cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
                     cin>> cantNoc4;
-                    cout<< "Esta seguro de registrar al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4 << "? Presione Y o N" << endl;
+                    cout<< "Esta seguro de registrar al cliente " << nombre4 << " " << apellido4 << " en la habitacion " << hab4 << "? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     system("cls");
 
@@ -506,7 +504,7 @@ int main(int argc, char const *argv[])
                     cin>> apellido5;
                     cout<< "Ingrese la cantidad de noches que se hospedara el cliente: ";
                     cin>> cantNoc5;
-                    cout<< "Esta seguro de registrar al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5 << "? Presione Y o N" << endl;
+                    cout<< "Esta seguro de registrar al cliente " << nombre5 << " " << apellido5 << " en la habitacion " << hab5 << "? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     system("cls");
 
@@ -555,10 +553,7 @@ int main(int argc, char const *argv[])
                 }
                  
             }
-
-            if (seleccion == 0)
-            {
-                break;
+            break;
             }
           }
           
@@ -566,31 +561,31 @@ int main(int argc, char const *argv[])
 
         case 2: // Vista de habitaciones disponibles
         {
-            cout<< "Estas son las habitaciones dispinibles, porfavor selecciona una:" << endl;
+            while (seleccion !=9)
+            {
+            system("cls"); 
+            cout<< "Este es el estado actual de las habitaciones del hotel" << endl;
             cout<< endl;
             cout<< endl;
-            cout<< hab1 << tipo1 << stat1 <<" ------ "<< "L" << pre1 << endl;
-            cout<< hab2 << tipo2 << stat2 <<" ------ "<< "L" << pre2 << endl;
-            cout<< hab3 << tipo3 << stat3 <<" ------ "<< "L" << pre3 << endl;
-            cout<< hab4 << tipo4 << stat4 <<" ------ "<< "L" << pre4 << endl;
-            cout<< hab5 << tipo5 << stat5 <<" ------ "<< "L" << pre5 << endl;
+            cout<< hab1 << tipo1 << stat1 << endl;
+            cout<< hab2 << tipo2 << stat2 << endl;
+            cout<< hab3 << tipo3 << stat3 << endl;
+            cout<< hab4 << tipo4 << stat4 << endl;
+            cout<< hab5 << tipo5 << stat5 << endl;
             cout<< endl;
             cout<< "O presiona 9 para volver al menu anterior" << endl;
             cin>> seleccion;
             cout<< endl;
-
-            if (seleccion == 9)
-            {
-                break;
             }
 
         }
 
         case 3: // Restaurante
-        {
-            opcion = 0;
-            while (opcion != 9)
+        {      
+            while (seleccion !=9)
             {
+            system("cls"); 
+            seleccion = 0;
             cout << "************" << endl;
             cout << "----Menu----" << endl;
             cout << "************" << endl;
@@ -601,9 +596,9 @@ int main(int argc, char const *argv[])
             cout << "4. Postres" << endl;
             cout << "9. Salir." << endl;
             cout << "Ingrese una opcion: ";
-            cin >> opcion;
+            cin >> seleccion;
 
-            switch (opcion)
+            switch (seleccion)
             {
             case 1:
             {
@@ -1261,24 +1256,30 @@ int main(int argc, char const *argv[])
 
         case 4: // Cuentas por pagar
         {
+             while (seleccion !=9)
+            {
+            system("cls");
+            seleccion = 0;
             cout << "Las cuentas montos a pagar de las habitaciones son de: " << endl;
             cout << endl;
-            cout << hab1 << " " << nombre1 << " " << apellido1 << " L" << cuenta1 << endl;
-            cout << hab2 << " " << nombre2 << " " << apellido2 << " L" << cuenta2 << endl;
-            cout << hab3 << " " << nombre3 << " " << apellido3 << " L" << cuenta3 << endl;
-            cout << hab4 << " " << nombre4 << " " << apellido4 << " L" << cuenta4 << endl;
-            cout << hab5 << " " << nombre5 << " " << apellido5 << " L" << cuenta5 << endl;
+            cout << hab1 << " ------ " << nombre1 << " ------ " << apellido1 << " L" << cuenta1 << endl;
+            cout << hab2 << " ------ " << nombre2 << " ------ " << apellido2 << " L" << cuenta2 << endl;
+            cout << hab3 << " ------ " << nombre3 << " ------ " << apellido3 << " L" << cuenta3 << endl;
+            cout << hab4 << " ------ " << nombre4 << " ------ " << apellido4 << " L" << cuenta4 << endl;
+            cout << hab5 << " ------ " << nombre5 << " ------ " << apellido5 << " L" << cuenta5 << endl;
             cout << endl;
-            system("pause");
-            break;
+            cout<< "O presiona 9 para volver al menu anterior" << endl;
+            cin>> seleccion;
+            cout<< endl;
+            }
         }   
 
         case 5: // Check out
         {
+            while (seleccion !=9)
+            {
             system("cls"); 
-            
             cout<< "Estas son las habitaciones, porfavor selecciona una para hacer check out:" << endl;
-            cout<< endl;
             cout<< endl;
             cout<< hab1 << " " << tipo1 << " " << stat1 << endl;
             cout<< hab2 << " " << tipo2 << " " << stat2 << endl;
@@ -1308,7 +1309,7 @@ int main(int argc, char const *argv[])
                 
                 else if (stat1 == "Ocupada")
                 {
-                    cout << "Esta seguro que desea liberar la habitacion A001?" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A001? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1319,6 +1320,8 @@ int main(int argc, char const *argv[])
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
                         cuenta1 = 0;
+                        nombre1 = "";
+                        apellido1 = "";
                         system("pause");
                         break;
                     }
@@ -1346,7 +1349,7 @@ int main(int argc, char const *argv[])
                 
                 else if (stat2 == "Ocupada")
                 {
-                    cout << "Esta seguro que desea liberar la habitacion A002?" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A002? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1357,6 +1360,8 @@ int main(int argc, char const *argv[])
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
                         cuenta2 = 0;
+                        nombre2 = "";
+                        apellido2 = "";
                         system("pause");
                         break;
                     }
@@ -1384,7 +1389,7 @@ int main(int argc, char const *argv[])
                 
                 else if (stat3 == "Ocupada")
                 {
-                    cout << "Esta seguro que desea liberar la habitacion A003?" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A003? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1395,6 +1400,8 @@ int main(int argc, char const *argv[])
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
                         cuenta3 = 0;
+                        nombre3 = "";
+                        apellido3 = "";
                         system("pause");
                         break;
                     }
@@ -1422,7 +1429,7 @@ int main(int argc, char const *argv[])
                 
                 else if (stat4 == "Ocupada")
                 {
-                    cout << "Esta seguro que desea liberar la habitacion A004?" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A004? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1433,6 +1440,8 @@ int main(int argc, char const *argv[])
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
                         cuenta4 = 0;
+                        nombre4 = "";
+                        apellido4 = "";
                         system("pause");
                         break;
                     }
@@ -1460,7 +1469,7 @@ int main(int argc, char const *argv[])
                 
                 else if (stat5 == "Ocupada")
                 {
-                    cout << "Esta seguro que desea liberar la habitacion A005?" << endl;
+                    cout << "Esta seguro que desea liberar la habitacion A005? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1471,6 +1480,8 @@ int main(int argc, char const *argv[])
                         system("cls");
                         cout<< "La habitacion se libero de manera correcta" << endl;
                         cuenta5 = 0;
+                        nombre5 = "";
+                        apellido5 = "";
                         system("pause");
                         break;
                     }
@@ -1487,36 +1498,26 @@ int main(int argc, char const *argv[])
                  
             }
 
-            if (seleccion == 0)
-            {
-                break;
             }
-            }
-
-
+          }
         }
 
         case 6: // Aseo de habitaciones
         {
+            while (seleccion !=9)
+            {
             system("cls"); 
-            
-            cout<< "Estas son las habitaciones, porfavor selecciona la que ya fue asaeada:" << endl;
+            cout<< "Estas son las habitaciones, porfavor selecciona la que ya esta limpia y lista para su uso:" << endl;
             cout<< endl;
-            cout<< endl;
-            cout<< hab1 << " " << lim1 << " " << stat1 << endl;
-            cout<< hab2 << " " << lim2 << " " << stat2 << endl;
-            cout<< hab3 << " " << lim3 << " " << stat3 << endl;
-            cout<< hab4 << " " << lim4 << " " << stat4 << endl;
-            cout<< hab5 << " " << lim5 << " " << stat5 << endl;
+            cout<< hab1 << " ------ " << lim1 << " ------ " << stat1 << endl;
+            cout<< hab2 << " ------ " << lim2 << " ------ " << stat2 << endl;
+            cout<< hab3 << " ------ " << lim3 << " ------ " << stat3 << endl;
+            cout<< hab4 << " ------ " << lim4 << " ------ " << stat4 << endl;
+            cout<< hab5 << " ------ " << lim5 << " ------ " << stat5 << endl;
             cout<< endl;
             cout<< "O presiona 9 para volver al menu anterior" << endl;
             cin>> seleccion;
             cout<< endl;
-
-            if (seleccion == 9)
-            {
-                break;
-            }
 
             switch (seleccion)
             {
@@ -1531,7 +1532,7 @@ int main(int argc, char const *argv[])
                 
                 else if (lim1 == "Sucia")
                 {
-                    cout << "Esta seguro que desea marcar la habitacion A001 como limpia?" << endl;
+                    cout << "Esta seguro que desea marcar la habitacion A001 como limpia? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1564,7 +1565,7 @@ int main(int argc, char const *argv[])
                 
                 else if (lim2 == "Sucia")
                 {
-                    cout << "Esta seguro que desea marcar la habitacion A002 como limpia?" << endl;
+                    cout << "Esta seguro que desea marcar la habitacion A002 como limpia? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1597,7 +1598,7 @@ int main(int argc, char const *argv[])
                 
                 else if (lim3 == "Sucia")
                 {
-                    cout << "Esta seguro que desea marcar la habitacion A003 como limpia?" << endl;
+                    cout << "Esta seguro que desea marcar la habitacion A003 como limpia? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1619,7 +1620,7 @@ int main(int argc, char const *argv[])
                  
             }
 
-            case 4:
+            case 4: // Habitacion 4
             {
                 if (lim4 == "Limpia")
                 {
@@ -1630,7 +1631,7 @@ int main(int argc, char const *argv[])
                 
                 else if (lim4 == "Sucia")
                 {
-                    cout << "Esta seguro que desea marcar la habitacion A004 como limpia?" << endl;
+                    cout << "Esta seguro que desea marcar la habitacion A004 como limpia? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1662,7 +1663,7 @@ int main(int argc, char const *argv[])
                 
                 else if (lim5 == "Sucia")
                 {
-                    cout << "Esta seguro que desea marcar la habitacion A005 como limpia?" << endl;
+                    cout << "Esta seguro que desea marcar la habitacion A005 como limpia? Presione SI = y o NO = n" << endl;
                     cin>> resp;
                     if (resp == 'y')
                     {
@@ -1683,21 +1684,9 @@ int main(int argc, char const *argv[])
                 }
                  
             }
-
-            if (seleccion == 0)
-            {
-                break;
             }
-            }
-
-
-        
+        }  
         }
-        }
-
-     if (opcion == 0)
-        {
-            break;
         }
     }
 }
