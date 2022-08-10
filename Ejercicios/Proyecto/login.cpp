@@ -14,7 +14,7 @@ void inicioSesion ()
     // fila 1
     usuarios[1][0] = "caja";
     usuarios[1][1] = "12345";
-    usuarios[1][2] = "cajeros";
+    usuarios[1][2] = "cajero";
     
     // fila 2
     usuarios[2][0] = "vendendor";
