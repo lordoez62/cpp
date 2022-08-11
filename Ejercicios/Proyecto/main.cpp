@@ -124,7 +124,7 @@ int main(int argc, char const *argv[])
     }
 
 
-    while (opcion != 7)
+    while (opcion != 8)
     {
         seleccion = 0;
         system("cls");
@@ -137,7 +137,8 @@ int main(int argc, char const *argv[])
         cout<< "4. Cuentas por pagar" << endl;
         cout<< "5. Check out" << endl;
         cout<< "6. Aseo de habitaciones" << endl;
-        cout<< "7. Salir del sistema" << endl;
+        cout<< "7. Cambio de precios del sistema" << endl;
+        cout<< "8. Salir del sistema" << endl;
         cin>> opcion;
 
 
@@ -3600,6 +3601,11 @@ int main(int argc, char const *argv[])
             }
         }  
         }
+            
+            case 7:
+            {
+
+            }
         }
     }
 }
