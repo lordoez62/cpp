@@ -3,4 +3,4 @@
 using namespace std;
 
 void inicioSesion();
-bool autenticar(string usuario, string contrasena);
+int sysadmin(string usuario, string contrasena);

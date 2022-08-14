@@ -115,7 +115,7 @@ int main(int argc, char const *argv[])
         
         int resultado = sysadmin(usuario, contrasena);
 
-        if (resultado == 1) // sysadmin
+        if (resultado == 1)
         {
             while (opcion != 8)
             {
@@ -4648,7 +4648,7 @@ int main(int argc, char const *argv[])
             }
         }
 
-        else if (resultado == 2) // cajero
+        else if (resultado == 2)
         {
             while (opcion != 8)
             {
@@ -8313,7 +8313,7 @@ int main(int argc, char const *argv[])
             }
         }
 
-        else if (resultado == 3) // vendedor
+        else if (resultado == 3)
         {
             while (opcion != 8)
             {
