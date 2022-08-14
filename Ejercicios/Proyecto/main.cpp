@@ -1,6 +1,5 @@
 #include <iostream>
 #include "login.h"
-#include "habitaciones.h"
 
 using namespace std;
 
@@ -3588,6 +3587,8 @@ int main(int argc, char const *argv[])
                 
                 case 7: // Ajuste de precios
                 {
+                    while (seleccion != 9)
+                    {
                     system("cls"); 
                     cout<< "Selecciona una categoria a la que quieres modificar los precios:" << endl;
                     cout<< endl;
@@ -3595,10 +3596,10 @@ int main(int argc, char const *argv[])
                     cout<< "2. Restaurante" << endl;
                     cout<< endl;
                     cout<< "O presiona 9 para volver al menu anterior" << endl;
-                    cin>> opcion;
+                    cin>> seleccion;
                     cout<< endl;      
     
-                    switch (opcion)
+                    switch (seleccion)
                     {
                         case 1:
                         {
@@ -4449,11 +4450,12 @@ int main(int argc, char const *argv[])
                         }
                     }
                     }
+                    }
                 }
             }
         } 
     }
-    
+
     system("cls");
         cout<< endl;
         cout<< "Saliste del sistema" << endl;
