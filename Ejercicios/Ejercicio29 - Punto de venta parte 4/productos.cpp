@@ -20,22 +20,22 @@ void productos(int opcion)
             cout << "3. Piña colada" << endl;
             cout << "4. Granita de fruta" << endl;
             cout << "0. Salir del sistema." << endl;
+            cout << endl;
             cout << "Ingrese una opcion: ";
             cin >> opcionProductos;
-            cout << endl;
             cout << endl;
             
             switch (opcionProductos)
             {
                 case 1:
                 {
-                    agregarProductos("Capuccino ------------- 40", 1, 40);
+                    agregarProductos("1 Capuccino ------------- 40", 1, 40);
                     break;
                 }
     
                  case 2:
                 {
-                    agregarProductos("Capuccino ------------- 30", 1, 30);
+                    agregarProductos("1 Expresso ------------- 30", 1, 30);
                     break;
                 }
                 
